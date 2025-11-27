@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="container">
+    <h2 id="titulo">Iniciar Sesión</h2>
+    <div id="formLogin">
+      <input type="text" id="loginUsuario" placeholder="Usuario"/>
+      <input type="password" id="loginPassword" placeholder="Contraseña"/>
+      <button onclick="login()">entrar</button>
+    </div>
+
+    <div id="formRegistro" style="display: none;">
+      <input type="text" id="nuevoUsuario" placeholder="Nuevo usuario" required />
+      <input type="password" id="nuevoPassword" placeholder="Nueva contraseña" required />
+      <button onclick="registrar()">Crear cuenta</button>
+    </div>
+
+    <div class="toggle" onclick="nuevaCuenta()">¿No tenés cuenta? Crear una</div>
+    <div class="mensaje" id="mensaje"></div>
+  </div>
+
+  <h3>usuario registrado:</h3>
+  <ul id="listaUsuarios"></ul>
+
+
+<script src="scrip.js"></script>
+</body>
+</html>
